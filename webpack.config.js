@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -22,7 +23,7 @@ module.exports = {
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
                         outputPath: 'fonts/',
@@ -35,6 +36,14 @@ module.exports = {
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].css'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: 'src/assets/images',
+                    to: 'images'
+                }
+            ]
         }),
         new BrowserSyncPlugin({
             files: ['src/scss/*', 'public/*.html'],

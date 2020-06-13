@@ -1,3 +1,32 @@
 // Font Awesome
 // --------------------
-$fa-font-path: '~font-awesome/fonts'
+$fa-font-path: '~font-awesome/fonts';
+
+// Fonts
+// --------------------
+$default-font-size: 16px;
+$medium-font-size: 22px;
+$large-font-size: 26px;
+$extra-large-font-size-mobile: 44px;
+$extra-large-font-size: 63px;
+
+$font-family: 'Open Sans';
+$font-family-fallback: 'Helvetica', sans-serif;
+
+// Colors
+// --------------------
+$black: #000;
+$grey: #404040;
+$orange: #F57F17;
+$white: #FFF;
+
+$color-brand: $orange;
+$color-bg: $grey;
+
+$color-text: $grey;
+$color-text-alt: $black;
+
+// Breakpoints
+// --------------------
+$breakpoint-medium: 834px;
+$breakpoint-large: 1000px;
