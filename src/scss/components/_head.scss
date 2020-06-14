@@ -21,4 +21,8 @@
     background-repeat: no-repeat;
     background-position: 0% 100%;
   }
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: 65px;
+  }
 }

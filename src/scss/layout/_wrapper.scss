@@ -1,3 +1,6 @@
 .wrapper {
 
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+  }
 }

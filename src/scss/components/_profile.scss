@@ -8,4 +8,22 @@
     border-radius: 50%;
     border: 4px solid rgba(0, 0, 0, 0.2);
   }
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0;
+
+    &__picture {
+      margin-right: 40px;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 32%;
+    padding: 60px 0 30px;
+    background: $color-brand;
+
+    &__picture {
+      margin: 0 auto;
+    }
+  }
 }
