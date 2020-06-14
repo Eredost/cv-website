@@ -8,4 +8,13 @@
 @import "base/base",
   "base/typography";
 
-@import "layout/wrapper";
+@import "layout/wrapper",
+  "layout/header",
+  "layout/main",
+  "layout/sidebar";
+
+@import "components/profile",
+  "components/head",
+  "components/section",
+  "components/experience",
+  "components/testimonial";

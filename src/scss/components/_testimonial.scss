@@ -1,0 +1,16 @@
+.testimonial {
+  margin: 30px auto 0;
+
+  &__fullname,
+  &__job-title,
+  &__phone-number {
+    color: $color-text-alt;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__fullname {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+}

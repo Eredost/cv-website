@@ -42,11 +42,14 @@ module.exports = {
                 {
                     from: 'src/assets/images',
                     to: 'images'
+                },
+                {
+                    from: 'src/assets/index.html'
                 }
             ]
         }),
         new BrowserSyncPlugin({
-            files: ['src/scss/*', 'public/*.html'],
+            files: ['src/scss/*', 'src/assets/*.html'],
             startPath: '/public',
             host: 'localhost',
             port: 3000,

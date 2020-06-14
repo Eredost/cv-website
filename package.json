@@ -4,7 +4,7 @@
   "description": "Second project of the brand new web developer course at Openclassrooms. This project consists of a simple web integration in HTML / CSS.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development --color --progress",
     "build": "webpack --mode production"
   },
   "repository": {
