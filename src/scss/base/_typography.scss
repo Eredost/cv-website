@@ -26,8 +26,12 @@ h2 {
 }
 
 h3 {
-  font-size: $large-font-size;
+  font-size: $medium-font-size;
   color: $color-text-alt;
+
+  @media (min-width: $breakpoint-small) {
+    font-size: $large-font-size;
+  }
 }
 
 h4 {
